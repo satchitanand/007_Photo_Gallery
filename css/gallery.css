@@ -1,12 +1,20 @@
 h1 {
   color: darkgrey;
   text-align: center;
-  margin: 0.2em auto;
+  margin-bottom: 0.2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
 }
 
 .img-wrapper {
   position: relative;
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
   padding-top: 56.25%; /* for a 16:9 aspect ratio */
   overflow: hidden;
@@ -22,18 +30,16 @@ h1 {
 }
 
 .scrollable {
-  height: 15vh;
+  height: 18vh;
   overflow-x: auto;
   overflow-y: hidden;
   text-align: center;
 }
 
 #image-gallery {
-  overflow-x: scroll;
   height: 15vh;
   width: 80vw;
   white-space: nowrap;
-  padding-bottom: 1em;
 }
 
 .thumbnail {
@@ -50,4 +56,3 @@ h1 {
   margin: 1em;
   height: 90%;
 }
-
